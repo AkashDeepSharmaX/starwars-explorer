@@ -1,0 +1,3 @@
+[submodule "starwars-explorer"]
+	path = starwars-explorer
+	url = https://github.com/AkashDeepSharmaX/starwars-explorer.git
