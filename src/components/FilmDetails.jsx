@@ -32,16 +32,16 @@ const FilmDetails = () => {
     }, [id]);
 
     return (
-        <div className="border-md border-red-300 w-7xl m-auto">
+        <div className=" w-7xl m-auto">
             {loading && <p>Loading...</p>}
             {error && <p>{error}</p>}
             {movie && (
-                <div className=" p-4 mt-4 mx-9 mb-4">
-                    <h2 className=" mb-3 font-extrabold">name: {movie.title}</h2>
-                    <h3>Release Date: {movie.release_date}</h3>
-                    <p>director: {movie.director}</p>
-                    <p>producer: {movie.producer}</p>
-                    <p>{movie.opening_crawl}</p>
+                <div className="bg-linear-to-r from-pink-500 to-violet-500 rounded-lg p-4 mt-4 mx-9 mb-4">
+                    <h2 className="text-white text-xl  font-extrabold mb-3 ">Name: {movie.title}</h2>
+                    <h3 className="text-white">Release Date: {movie.release_date}</h3>
+                    <p className="text-white" >Director: {movie.director}</p>
+                    <p className="text-white">Producer: {movie.producer}</p>
+                    <p className="text-white">{movie.opening_crawl}</p>
                 </div>
             )}
         </div>

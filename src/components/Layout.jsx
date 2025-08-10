@@ -5,8 +5,11 @@ import Header from "./Header"
 const Layout = () => {
     return (
         <main>
+            <div className="color">
+
             <Header />
             <Outlet />
+            </div>
         </main>
     )
 }

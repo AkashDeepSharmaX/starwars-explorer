@@ -8,9 +8,9 @@ const Film = () => {
     const{list, loading, error}=useFetchdata('https://swapi-api.hbtn.io/api/films/')
 
     return (
-        <div className="border border-red-300 w-7xl m-auto">
+        <div className="border border-red-300 w-7xl m-auto rounded-lg content-center   bg-linear-to-r from-pink-500 to-violet-500">
 
-            {error && <h2 className=" text-red-600 h-4 ">{error}</h2>}
+            {error && <h2 className=" text-white h-25 ">{error}</h2>}
             {
                 loading ? (<p>loading...... </p>) : (
                     <ul className=" flex flex-col p-2 mt-6 ">
