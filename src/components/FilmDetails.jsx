@@ -36,7 +36,7 @@ const FilmDetails = () => {
             {loading && <p>Loading...</p>}
             {error && <p>{error}</p>}
             {movie && (
-                <div className="bg-linear-to-r from-pink-500 to-violet-500 rounded-lg p-4 mt-4 mx-9 mb-4">
+                <div className=" bg-linear-65 from-purple-500 to-pink-500rounded-lg p-4 mt-4 mx-9 mb-4">
                     <h2 className="text-white text-xl  font-extrabold mb-3 ">Name: {movie.title}</h2>
                     <h3 className="text-white">Release Date: {movie.release_date}</h3>
                     <p className="text-white" >Director: {movie.director}</p>
